@@ -8,6 +8,10 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
     <!-- ============== REMIXICONS ============= -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
 
     <!-- ================ SWIPER CSS ============== -->
 
@@ -18,12 +22,74 @@
   </head>
   <body>
     <!-- =============== HEADER ================ -->
-    <header class="header" id="header"></header>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">Maru</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">
+                <i class="ri-home-line"></i>
+                <span>Home</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#new" class="nav__link">
+                <i class="ri-price-tag-3-line"></i>
+                <span>New</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#collection" class="nav__link">
+                <i class="ri-compass-line"></i>
+                <span>Collection</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#producst" class="nav__link">
+                <i class="ri-t-shirt-line"></i>
+                <span>Products</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- ========= Theme Change Button ======== -->
+        <i class="ri-moon-line"></i>
+      </nav>
+    </header>
 
     <!-- ================= MAIN ================ -->
     <main class="main">
       <!-- ================ HOME ================ -->
-      <section class="home seciton" id="home"></section>
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__data">
+            <h1 class="home__title">
+              New Clothing <br />
+              Collection
+            </h1>
+
+            <p class="home__description">
+              The new collection of clothing from <br />
+              the best brands this year.
+            </p>
+
+            <a href="#new" class="button__link">
+              Explore <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+
+          <div class="home__images">
+            <img src="assets/image/home1.png" alt="clothingblue" />
+            <img src="assets/image/home2.png" alt="clothingwhite" />
+          </div>
+        </div>
+      </section>
 
       <!-- ================== NEW ================ -->
       <section class="new section" id="new"></section>
