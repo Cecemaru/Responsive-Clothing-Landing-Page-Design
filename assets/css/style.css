@@ -411,3 +411,120 @@ img {
 .brand__img:nth-child(even) {
   margin-top: 2rem;
 }
+
+/* ================ FOOTER =============== */
+.footer__container {
+  row-gap: 3rem;
+}
+
+.footer__logo {
+  color: var(--title-color);
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-medium);
+  display: inline-block;
+  margin-bottom: 0.75rem;
+}
+
+.footer__content,
+.footer__links {
+  display: grid;
+}
+
+.footer__content {
+  grid-template-columns: repeat(2, max-content);
+  gap: 3.5rem 3rem;
+}
+
+.footer__title {
+  font-size: var(--h3-font-size);
+  margin-bottom: 1.25rem;
+}
+
+.footer__links {
+  row-gap: 0.75rem;
+}
+
+.footer__link,
+.footer__information {
+  font-size: var(--small-font-size);
+}
+
+.footer__link {
+  color: var(--text-color);
+  transition: 0.4s;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+  color: var(--title-color);
+}
+
+.footer__social-link {
+  display: inline-flex;
+  color: var(--title-color);
+  padding: 0.4rem;
+  background-color: var(--container-color);
+  border-radius: 25%;
+  font-size: 1.25rem;
+  transition: background-color 0.3s;
+}
+
+.footer__social-link:hover {
+  background-color: var(--bg-color-light);
+}
+
+.footer__info {
+  margin-top: 6rem;
+  padding-bottom: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0.75rem;
+}
+
+.footer__copy,
+.footer__privacy {
+  font-size: var(--smaller-font-size);
+  color: var(--text-color-light);
+}
+
+/* =========== SCROLL BAR =============== */
+::-webkit-scrollbar {
+  width: 0.6rem;
+  border-radius: 0.5rem;
+  background-color: hsl(220, 8%, 76%);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsl(220, 8%, 64%);
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(220, 8%, 54%);
+}
+
+/* ============ SCROLL UP ============= */
+.scroll__up {
+  position: fixed;
+  right: 1rem;
+  bottom: -30%;
+  background-color: var(--container-color);
+  box-shadow: 0 8px 12px hsla(220, 18%, 45%, 0.15);
+  display: inline-flex;
+  color: var(--title-color);
+  padding: 0.35rem;
+  font-size: 1.1rem;
+  z-index: var(--z-tooltip);
+  border-radius: 25%;
+  transition: 0.3s;
+}
+
+.scrollup:hover {
+  transform: translateY(-0.25rem);
+}
+
+/* == SHOW SCROLL == */
+.show-scroll {
+  bottom: 7.5rem;
+}
