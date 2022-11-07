@@ -14,6 +14,10 @@
     />
 
     <!-- ================ SWIPER CSS ============== -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
 
     <!-- ================== CSS =============== -->
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -50,7 +54,7 @@
             </li>
 
             <li class="nav__item">
-              <a href="#producst" class="nav__link">
+              <a href="#products" class="nav__link">
                 <i class="ri-t-shirt-line"></i>
                 <span>Products</span>
               </a>
@@ -178,7 +182,64 @@
       </section>
 
       <!-- ================== PRODUCTS ============ -->
-      <seciton class="products section" id="products"> </seciton>
+      <section class="products section" id="products">
+        <h2 class="section__title">Best Products</h2>
+
+        <div class="products__container container swiper">
+          <div class="empty swiper-wrapper">
+            <article class="products__card swiper-slide">
+              <img
+                src="assets/image/product1.png"
+                alt="product img"
+                class="products__img"
+              />
+
+              <h2 class="products__title">Gotland black Jacket</h2>
+              <span class="products__price"> ₺624.99 </span>
+            </article>
+
+            <article class="products__card swiper-slide">
+              <img
+                src="assets/image/product2.png"
+                alt="product img"
+                class="products__img"
+              />
+
+              <h2 class="products__title">Black Sports Shorts</h2>
+              <span class="products__price"> ₺214.99 </span>
+            </article>
+
+            <article class="products__card swiper-slide">
+              <img
+                src="assets/image/product3.png"
+                alt="product img"
+                class="products__img"
+              />
+
+              <h2 class="products__title">Knox Quilted Jacket</h2>
+              <span class="products__price"> ₺432.99 </span>
+            </article>
+
+            <article class="products__card swiper-slide">
+              <img
+                src="assets/image/product4.png"
+                alt="product img"
+                class="products__img"
+              />
+
+              <h2 class="products__title">Blue Sport Pants</h2>
+              <span class="products__price"> ₺264.99 </span>
+            </article>
+          </div>
+          <div class="swiper-button-next">
+            <i class="ri-arrow-right-line"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="ri-arrow-left-line"></i>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
 
       <!-- =============== BRANDS ============= -->
       <section class="brands section" id="brands"></section>
@@ -193,7 +254,7 @@
     <script src=""></script>
 
     <!-- =========== SWIPER JS ============= -->
-    <script src=""></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
     <!-- =========== MAIN JS ============= -->
     <script src="assets/javascript/main.js"></script>
